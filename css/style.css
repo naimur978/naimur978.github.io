@@ -13,11 +13,11 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #414141;
+    color: #5f3434;
 }
 
 a {
-    color: #313131;
+    color: #a39090;
     transition: .3s;
 }
 
@@ -279,9 +279,9 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    padding: 100px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 35, 60, .43), rgba(1, 35, 60, .43)), url(../img/hero-bg.jpg);
+    background: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1209,7 +1209,7 @@ a:focus {
 }
 
 .footer .container-fluid {
-    padding: 60px 0 0 0;
+    padding: 0px 0 0 0;
 }
 
 .footer .footer-info {
