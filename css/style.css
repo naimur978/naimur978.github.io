@@ -555,9 +555,11 @@ a:focus {
 
 .about .about-img {
     position: relative;
-    margin-top: 3%;
+    margin-top: 10%;
+    margin-left: 20%;
+
     max-height: 380px;
-    width: 60%;
+    width: 50%;
 }
 .space{
     width: 80px;
