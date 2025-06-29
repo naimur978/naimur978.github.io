@@ -2,7 +2,7 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #797979;
+    color: #000000;
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
@@ -13,22 +13,19 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #5f3434;
+    color: #000000;
 }
 
 a {
-    color: #a39090;
+    color: #000000;
     transition: .3s;
+    text-decoration: none;
 }
 
-.pankaj-text{
-    color: white;
-    font-weight: 600;
-}
 a:hover,
 a:active,
 a:focus {
-    color: rgba(1, 35, 60, .43);
+    color: #00adb5;
     outline: none;
     text-decoration: none;
 }
@@ -145,31 +142,70 @@ a:focus {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #ffffff !important;
     transition: .5s;
     z-index: 999;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
 }
 
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    background: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #00adb5;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #00adb5;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after,
+.navbar-light .navbar-nav .nav-link.active:after {
+    width: 80%;
 }
 
 @media screen and (min-width: 700px) {
     .navbar-brand{
         font-size: 40px;
-        color: blue;
+        color: #000000;
     }
 }
+
 @media screen and (max-width: 300px) {
     .navbar-brand{
         font-size: 25px;
     }
 }
+
 .navbar .navbar-brand {
-    margin: 0; 
+    margin: 0;
+    color: #000000 !important;
     line-height: 0px;
     font-weight: 700;
     transition: .5s;
@@ -200,8 +236,8 @@ a:focus {
         position: absolute;
         width: 100%;
         padding: 30px 60px;
-        background: transparent !important;
-        border-bottom: 1px dashed rgba(256, 256, 256, .2);
+        background: #ffffff !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         z-index: 9;
     }
     
@@ -211,7 +247,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #ffffff;
+        color: #000000;
     }
     /* @media all and (min-width: 600px) and (max-width: 1200px){
         .about-img>img{
@@ -227,24 +263,34 @@ a:focus {
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #ffffff;
+        color: #000000;
         font-size: 15px;
         font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
     }
     
-    .navbar-light.nav-sticky .navbar-nav .nav-link,
-    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #414141;
-    }
-
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: #00adb5;
+        font-weight: 600;
     }
     
-    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
-    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: rgba(164, 35, 1, 0.43);
+    .navbar-light .navbar-nav .nav-link:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #00adb5;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover:after,
+    .navbar-light .navbar-nav .nav-link.active:after {
+        width: 100%;
     }
 }
 
@@ -1207,121 +1253,164 @@ a:focus {
 
 
 /*******************************/
-/********* Footer CSS **********/
+/******** Certificates CSS *******/
 /*******************************/
-.footer {
-    position: relative;
-    margin-top: 45px;
-    background: #000 !important;
-    padding-bottom: 20px;
+.certificates {
+    padding: 60px 0;
+    background: #ffffff;
 }
 
-.footer .container-fluid {
-    padding: 0px 0 0 0;
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer .footer-info {
-    position: relative;
-    width: 100%;
-    text-align: center;
+.certificate-card {
+    background: #ffffff;
+    border: 1px solid #000000 !important;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.footer .footer-info h2 {
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: #000000 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.certificate-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.certificate-issuer {
+    font-size: 14px;
+    color: #666666;
     margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.certificate-card .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.certificate-card .btn:hover {
+    background: #00adb5;
     color: #ffffff;
+    border-color: #00adb5;
 }
 
-.footer .footer-info h3 {
-    margin-bottom: 25px;
-    font-size: 22px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.footer .footer-menu {
-    width: 100%;
-    display: inline-block;
-    justify-content: center;
-}
-
-.footer .footer-menu p {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 0 15px;
-    /* border-right: 1px solid #ffffff; */
-}
-
-.footer .footer-menu p:last-child {
-    border: none;
-}
-
-.footer .footer-social {
-    position: relative;
-    margin-top: 15px;
-}
-
-.footer .footer-social a {
-    display: inline-block;
-}
-
-.footer .footer-social a i {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #ffffff;
-    transition: .3s;
-}
-
-.footer .footer-social a:last-child i {
-    margin: 0;
-}
-
-.footer .footer-social a:hover i {
-    color: #414141;
-}
-
-.footer .copyright .col-md-6:last-child p {
-    text-align: right;
-}
-
-.footer .copyright p a {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.footer-hr{
-    width: 100%;
-    margin:5px auto;
-    background-color: white;
-}
-
-.footer .copyright p a:hover {
-    color: #414141;
-}
-
-@media (max-width: 575.98px) {
-    .footer .footer-info h2 {
-        margin-bottom: 20px;
-        font-size: 20px;
-        font-weight: 600;
+@media (max-width: 768px) {
+    .certificate-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 15px;
     }
-
-    .footer .footer-info h3 {
-        margin-bottom: 20px;
+    
+    .certificate-card {
+        height: 180px;
+        padding: 20px;
+    }
+    
+    .certificate-title {
         font-size: 16px;
     }
+}
 
-    .footer .footer-menu p {
-        font-size: 15px;
-        line-height: 16px;
-        padding: 0 5px;
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
+.contact {
+    padding: 60px 0;
+    background: #ffffff !important;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    border-color: #000000 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #00adb5;
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    color: #000000;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.contact-item a:hover {
+    color: #00adb5 !important;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        gap: 20px;
     }
-    /* .footer-menu{
-        margin: 4%;
-    } */
+    
+    .contact-item {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 
