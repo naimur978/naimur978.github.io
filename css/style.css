@@ -1449,3 +1449,15 @@ a:focus {
         max-width: 300px;
     }
 }
+
+.project-list b {
+    font-size: 1.3em;
+    /* Change color as needed */
+    /* Makes each name appear on its own line */
+    margin-bottom: 6px;
+    /* Adds space below the name */
+}
+
+.project-list p {
+    text-align: justify;
+}
