@@ -1461,3 +1461,8 @@ a:focus {
 .project-list p {
     text-align: justify;
 }
+
+/* Justify-align publication text */
+.papers-list p {
+    text-align: justify;
+}
