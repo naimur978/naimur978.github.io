@@ -1,6 +1,11 @@
 /*******************************/
+
+
 /********* General CSS *********/
+
+
 /*******************************/
+
 body {
     color: #000000;
     background: #ffffff;
@@ -8,10 +13,10 @@ body {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
     color: #000000;
 }
@@ -41,17 +46,19 @@ a:focus {
     background-image: url("/developer-portfolio-template/about-bg.png");
     background-repeat: no-repeat; */
 }
-#about-bg{
+
+#about-bg {
     background-image: url("/developer-portfolio-template/about-bg.png");
     background-repeat: no-repeat;
 }
+
 .btn {
     padding: 12px 25px;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background:rgba(1, 35, 60, .43);
+    background: rgba(1, 35, 60, .43);
     border: 2px solid transparent;
     border-radius: 0;
     box-shadow: inset 0 0 0 50px rgba(1, 35, 60, .43);
@@ -106,13 +113,21 @@ a:focus {
 }
 
 @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .back-to-top {
@@ -139,15 +154,21 @@ a:focus {
 
 
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
+
 .navbar {
     position: fixed;
     width: 100%;
     top: 0;
     background: #ffffff !important;
     transition: .5s;
-    background: #007bff; /* Changed to a blue color, update as needed */
+    background: #000000;
+    /* Changed to a blue color, update as needed */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0;
 }
@@ -170,7 +191,7 @@ a:focus {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #00adb5;
+    color: #000000;
 }
 
 .navbar-light .navbar-nav .nav-link:after {
@@ -180,7 +201,7 @@ a:focus {
     left: 50%;
     width: 0;
     height: 2px;
-    background: #00adb5;
+    background: #101010;
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -191,14 +212,14 @@ a:focus {
 }
 
 @media screen and (min-width: 700px) {
-    .navbar-brand{
+    .navbar-brand {
         font-size: 40px;
         color: #000000;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .navbar-brand{
+    .navbar-brand {
         font-size: 25px;
     }
 }
@@ -212,12 +233,12 @@ a:focus {
     margin-left: 10%;
 }
 
+
 /* @media screen  and (min-width: 1280px) {
     .nav-brand{
         font-size: 45px;
     }
 } */
-
 
 .navbar .navbar-brand img {
     max-width: 100%;
@@ -240,12 +261,10 @@ a:focus {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         z-index: 9;
     }
-    
     .navbar.nav-sticky {
         padding: 10px 60px;
         background: #ffffff !important;
     }
-    
     .navbar .navbar-brand {
         color: #000000;
     }
@@ -255,11 +274,9 @@ a:focus {
             margin-bottom: 300px;
         }
     } */
-
     .navbar.nav-sticky .navbar-brand {
         color: rgba(1, 35, 60, .43);
     }
-
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
@@ -269,13 +286,11 @@ a:focus {
         transition: all 0.3s ease;
         position: relative;
     }
-    
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #00adb5;
+        color: #000000;
         font-weight: 600;
     }
-    
     .navbar-light .navbar-nav .nav-link:after {
         content: '';
         position: absolute;
@@ -283,35 +298,30 @@ a:focus {
         left: 50%;
         width: 0;
         height: 2px;
-        background: #00adb5;
+        background: #0f0f0f;
         transition: all 0.3s ease;
         transform: translateX(-50%);
     }
-    
     .navbar-light .navbar-nav .nav-link:hover:after,
     .navbar-light .navbar-nav .nav-link.active:after {
         width: 100%;
     }
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 991.98px) {
     .navbar {
         padding: 15px;
         background: #ffffff !important;
     }
-    
     .navbar .navbar-brand {
         color: rgba(1, 35, 60, .43);
     }
-    
     .navbar .navbar-nav {
         margin-top: 15px;
     }
-    
     .navbar a.nav-link {
         padding: 5px;
     }
-    
     .navbar .dropdown-menu {
         box-shadow: none;
     }
@@ -319,8 +329,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /********** Hero CSS ***********/
+
+
 /*******************************/
+
 .hero {
     position: relative;
     width: 100%;
@@ -347,7 +362,6 @@ a:focus {
     border-radius:100px 300px  100px 100px;
     box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 12%); */
 }
-
 
 .hero .hero-content {
     position: relative;
@@ -391,11 +405,13 @@ a:focus {
     font-weight: 300;
     color: #ffffff;
 }
-.hero-btn{
+
+.hero-btn {
     display: flex;
     width: 98%;
     margin: auto;
 }
+
 .hero .hero-btn .btn {
     margin-top: 35px;
     color: rgba(1, 35, 60, .43);
@@ -413,7 +429,8 @@ a:focus {
 .hero .hero-btn .btn:first-child {
     margin-right: 10px;
 }
-#pankajimg{
+
+#pankajimg {
     width: 100%;
     height: 80%;
     border-radius: 50%;
@@ -425,100 +442,79 @@ a:focus {
     .hero {
         padding-top: 60px;
     }
-    
     .hero .hero-content {
         padding: 0 15px;
     }
-    
     .hero .hero-text p {
         font-size: 20px;
     }
-    
     .hero .hero-text h1 {
         font-size: 45px;
     }
-    
     .hero .hero-text h2 {
         font-size: 25px;
         height: 25px;
     }
-    
     .hero .hero-btn .btn {
         padding: 12px 30px;
         letter-spacing: 1px;
     }
- 
 }
 
 @media (max-width: 767.98px) {
-  .hero.hero-image{
-     
-    width: 100%;
-
-  }
-
+    .hero.hero-image {
+        width: 100%;
+    }
     .hero {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-    
     .hero,
     .hero .hero-text,
     .hero .hero-btn {
         width: 100%;
         text-align: center;
-
     }
-    
     .hero .hero-text p {
         font-size: 18px;
     }
-    
     .hero .hero-text h1 {
         font-size: 35px;
     }
-    
     .hero .hero-text h2 {
         font-size: 22px;
         height: 22px;
     }
-    
     .hero .hero-btn .btn {
         padding: 10px 15px;
         letter-spacing: 1px;
     }
-    #pankajimg{
-       
+    #pankajimg {
         display: block;
         justify-content: center;
         margin-left: 120%;
     }
-   
 }
 
 @media (max-width: 575.98px) {
-  
     .hero .hero-text p {
         font-size: 16px;
     }
-    
     .hero .hero-text h1 {
         font-size: 30px;
     }
-    
     .hero .hero-text h2 {
         font-size: 18px;
         height: 18px;
     }
-    
     .hero .hero-btn .btn {
         padding: 8px 10px;
         letter-spacing: 0;
     }
-    #pankajimg{
+    #pankajimg {
         display: block;
-       justify-content: center;
-       margin-left: 55%;
+        justify-content: center;
+        margin-left: 55%;
         width: 50%;
         height: 50%;
     }
@@ -526,8 +522,13 @@ a:focus {
 
 
 /*******************************/
+
+
 /******* Section Header ********/
+
+
 /*******************************/
+
 .section-header {
     position: relative;
     margin-bottom: 45px;
@@ -583,12 +584,18 @@ a:focus {
 
 
 /*******************************/
+
+
 /********** About CSS **********/
+
+
 /*******************************/
+
 .about {
     position: relative;
     width: 100%;
     margin: -45px 0 45px 0;
+    padding-top: 40px;
 }
 
 .about .col-lg-6 {
@@ -603,15 +610,16 @@ a:focus {
     position: relative;
     margin-top: 10%;
     margin-left: 20%;
-
     max-height: 380px;
     width: 50%;
 }
-.space{
+
+.space {
     width: 80px;
     height: 20px;
     background-color: white;
 }
+
 .about .about-img img {
     position: relative;
     width: 100%;
@@ -628,15 +636,22 @@ a:focus {
 
 .about .about-text p {
     font-size: 16px;
-        text-align: justify;
-
+    text-align: justify;
 }
+
+.about-text p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
 .about-text-desc {
     display: flex;
 }
-.about-text-desc > div{
+
+.about-text-desc>div {
     margin: 1%;
 }
+
 .about .skills {
     margin-bottom: 30px;
 }
@@ -682,107 +697,89 @@ a:focus {
 
 /* my advantage */
 
-.box-container-my2{
+.box-container-my2 {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
     width: 90%;
     margin: auto;
     gap: 30px;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    text-align: center; 
-  }
-
-  
-@media all and (min-width: 320px) and (max-width: 767px) {
-   
-.box-container-my2{
-    display: grid;
-    grid-template-columns: repeat(1,auto);
-
-   
-  }
-  .newbox{
-    position: relative;
-    width: 240px;
-    height: 270px;
-    padding: 20px;
-
-    
-        text-align: justify; /* Added for better readability */
-
-    background: #fff;
-    box-shadow: 0 3px 10px var(--secondary-color-light);
-
-  }
+    text-align: center;
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px){
-    .box-container-my2{
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .box-container-my2 {
         display: grid;
-        grid-template-columns: repeat(2,auto);
-        
-       
-      }
-      .newbox{
+        grid-template-columns: repeat(1, auto);
+    }
+    .newbox {
         position: relative;
         width: 240px;
         height: 270px;
         padding: 20px;
-    
-        
-        border-radius: 20px;
-    
+        text-align: justify;
+        /* Added for better readability */
         background: #fff;
         box-shadow: 0 3px 10px var(--secondary-color-light);
-    
-      }
+    }
 }
-  
-  .newbox{
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .box-container-my2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    .newbox {
+        position: relative;
+        width: 240px;
+        height: 270px;
+        padding: 20px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0 3px 10px var(--secondary-color-light);
+    }
+}
+
+.newbox {
     position: relative;
     width: 240px;
     height: 270px;
     padding: 20px;
-
-    
     border-radius: 20px;
-
     background: #fff;
     box-shadow: 0 3px 10px var(--secondary-color-light);
+}
 
-  }
-  .percent{
+.percent {
     position: relative;
     height: 150px;
     /* width: 150px; */
-  
-  }
-  .percent svg{
+}
+
+.percent svg {
     position: relative;
     width: 150px;
     height: 150px;
-  }
-  .percent svg circle{
+}
 
-    fill:  none;
+.percent svg circle {
+    fill: none;
     stroke-width: 10;
-
-    transform: translate(5px,5px);
-
+    transform: translate(5px, 5px);
     stroke-linecap: round;
-  }
-  .percent svg circle:nth-child(1){
-    stroke-dashoffset: 0;
+}
 
-  
-  }
-  .percent svg circle:nth-child(2){
+.percent svg circle:nth-child(1) {
     stroke-dashoffset: 0;
-    stroke:var(--secondary-color);
-    
-  }
-  .percent .number{
+}
+
+.percent svg circle:nth-child(2) {
+    stroke-dashoffset: 0;
+    stroke: var(--secondary-color);
+}
+
+.percent .number {
     position: absolute;
     top: 0;
     left: 0;
@@ -792,65 +789,75 @@ a:focus {
     justify-content: center;
     align-items: center;
     color: #999;
-  }
-  .percent .number h2{
+}
+
+.percent .number h2 {
     font-size: 35px;
-  
-  }
-  .tech-heading{
+}
+
+.tech-heading {
     font-weight: var(--bold-font);
     /* color: #444; */
-  }
-  .percent .number h2 span{
+}
+
+.percent .number h2 span {
     font-size: 14px;
-  }
-  .text{
+}
+
+.text {
     padding: 10px 0 0;
     color: rgb(14, 4, 4);
-    font-weight:100px;
+    font-weight: 100px;
     letter-spacing: 1px;
-    
-  
-  }
-  
-  #git ,#adv, #skillhead{
+}
+
+#git,
+#adv,
+#skillhead {
     margin-top: 50px;
     margin-bottom: 30px;
-  }
+}
 
-  #git ,#adv, #skillhead{
+#git,
+#adv,
+#skillhead {
     margin-top: 50px;
     margin-bottom: 30px;
-  }
+}
 
-  .newbox{
+.newbox {
+    border: 6px solid rgb(37, 34, 196);
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4, 189, 228, 1) 0%, rgba(2, 83, 185, 1) 100.2%);
+}
 
-    border: 6px solid rgb(37, 34, 196); 
-    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
-   
+.newbox:hover {
+    border: 6px solid rgb(34, 150, 196);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 65, 1) 38%, rgba(0, 212, 255, 1) 100%);
+}
 
-  }
-  .newbox:hover{
-
-    border: 6px solid rgb(34, 150, 196); 
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 38%, rgba(0,212,255,1) 100%);
-   
-
-  }
-  .number{
+.number {
     border-radius: 50%;
     border: 3px solid rgb(12, 18, 185);
-  }
+}
 
-  .number:hover{
+.number:hover {
     border-radius: 50%;
-    border: 3px solid  rgb(34, 150, 196);
-  }
-  /* advantage end  */
+    border: 3px solid rgb(34, 150, 196);
+}
+
+
+/* advantage end  */
+
+
 /*******************************/
+
+
 /******* Experience CSS ********/
+
+
 /*******************************/
+
 .experience {
     position: relative;
     padding: 45px 0 15px 0;
@@ -907,20 +914,20 @@ a:focus {
 }
 
 .experience .timeline .timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 46px;
-  right: 10px;
-  z-index: 1;
-  border: 10px solid;
-  border-color: transparent transparent transparent #dddddd;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 46px;
+    right: 10px;
+    z-index: 1;
+    border: 10px solid;
+    border-color: transparent transparent transparent #dddddd;
 }
 
 .experience .timeline .timeline-item.right::before {
-  left: 10px;
-  border-color: transparent #dddddd transparent transparent;
+    left: 10px;
+    border-color: transparent #dddddd transparent transparent;
 }
 
 .experience .timeline .timeline-date {
@@ -980,32 +987,26 @@ a:focus {
     .experience .timeline::after {
         left: 8px;
     }
-
     .experience .timeline .timeline-item {
         width: 100%;
         padding-left: 38px;
     }
-    
     .experience .timeline .timeline-item.left {
         padding-right: 0;
     }
-    
     .experience .timeline .timeline-item.right {
         left: 0%;
         padding-left: 38px;
     }
-
-    .experience .timeline .timeline-item.left::after, 
+    .experience .timeline .timeline-item.left::after,
     .experience .timeline .timeline-item.right::after {
         left: 0;
     }
-    
     .experience .timeline .timeline-item.left::before,
     .experience .timeline .timeline-item.right::before {
         left: 18px;
         border-color: transparent #dddddd transparent transparent;
     }
-    
     .experience .timeline .timeline-item.left .timeline-date,
     .experience .timeline .timeline-item.right .timeline-date {
         position: relative;
@@ -1015,7 +1016,6 @@ a:focus {
         text-align: left;
         margin-bottom: 10px;
     }
-    
     .experience .timeline .timeline-item.left .timeline-text,
     .experience .timeline .timeline-item.right .timeline-text {
         border-right: none;
@@ -1024,11 +1024,14 @@ a:focus {
 }
 
 
-
-
 /*******************************/
+
+
 /******** Portfolio CSS ********/
+
+
 /*******************************/
+
 .portfolio {
     position: relative;
     padding: 45px 0 15px 0;
@@ -1076,7 +1079,8 @@ a:focus {
     position: relative;
     width: 100%;
 }
-.project-margin{
+
+.project-margin {
     margin: 2%;
 }
 
@@ -1087,8 +1091,8 @@ a:focus {
 
 .portfolio .portfolio-img img {
     position: relative;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transform: scale(1.1);
     transition: .5s;
@@ -1138,71 +1142,84 @@ a:focus {
     border-color: rgba(1, 35, 60, .43);
 }
 
-.portfolio-box{
+.portfolio-box {
     display: grid;
-    grid-template-columns: repeat(2,48%) !important;
+    grid-template-columns: repeat(2, 48%) !important;
     grid-gap: 2%;
 }
-.portfolio-box > div{
+
+.portfolio-box>div {
     width: 100%;
 }
-.tech-stacks{
-   width: 100%;
-   text-align: center;
+
+.tech-stacks {
+    width: 100%;
+    text-align: center;
 }
-.tech-stacks > img{
+
+.tech-stacks>img {
     max-width: 44px;
     margin: 1%;
 }
-.portfolio-item:hover .tech-stacks{
+
+.portfolio-item:hover .tech-stacks {
     color: white;
     /* background-color: rgba(17, 12, 12, 0.43); */
     -webkit-transition: ease-out 0.3s;
     padding-bottom: 2%;
 }
-.tech-text{
+
+.tech-text {
     text-align: center;
     color: rgba(1, 35, 60, .43);
 }
+
 @media screen and (max-width: 300px) {
-    .portfolio-btns{
+    .portfolio-btns {
         display: flex;
         width: 100%;
         margin: auto;
     }
-    #setbtn{
-    width: 100%;
-    font-size: 18px;
-   }
+    #setbtn {
+        width: 100%;
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width:310px) {
-    .portfolio-btns{
-    width: 80%;
-    margin:2% auto;
-}
-    .portfolio-btns >a{
-    display: inline-block;
-    margin: 2%;
-}
-#setbtn{
-    display: inline-block;
-    width: 45%;
-    font-size: 18px;
-}
+    .portfolio-btns {
+        width: 80%;
+        margin: 2% auto;
+    }
+    .portfolio-btns>a {
+        display: inline-block;
+        margin: 2%;
+    }
+    #setbtn {
+        display: inline-block;
+        width: 45%;
+        font-size: 18px;
+    }
 }
 
 
 /*******************************/
+
+
 /********* My Skills **********/
+
+
 /* ****************************/
+
 .skills {
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 2%; /* Match .project-margin and .portfolio .portfolio-text */
+    margin-left: 2%;
+    /* Match .project-margin and .portfolio .portfolio-text */
     margin-right: 2%;
 }
-.skills-icons{
+
+.skills-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
@@ -1211,23 +1228,26 @@ a:focus {
 }
 
 @media screen and (max-width:950px) {
-    .skills-icons{
+    .skills-icons {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 @media screen and (max-width:650px) {
-    .skills-icons{
+    .skills-icons {
         grid-template-columns: 1fr 1fr;
     }
 }
-.skills-icons > *{
+
+.skills-icons>* {
     width: 110px;
     height: 130px;
     transition: all 0.25s ease-in-out 0s;
     margin-bottom: 5%;
     position: relative;
 }
-.skills-icons > div :hover{
+
+.skills-icons>div :hover {
     cursor: pointer;
 }
 
@@ -1239,24 +1259,27 @@ a:focus {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
     margin-left: -60px;
-  }
-  
-  .skills-icons > div:hover .tooltiptext {
+}
+
+.skills-icons>div:hover .tooltiptext {
     visibility: visible;
-  }
-
+}
 
 
 /*******************************/
+
+
 /******** Certificates CSS *******/
+
+
 /*******************************/
+
 .certificates {
     padding: 60px 0;
     background: #ffffff;
@@ -1338,20 +1361,24 @@ a:focus {
         gap: 20px;
         padding: 15px;
     }
-    
     .certificate-card {
         height: 180px;
         padding: 20px;
     }
-    
     .certificate-title {
         font-size: 16px;
     }
 }
 
+
 /*******************************/
+
+
 /********* Contact CSS *********/
+
+
 /*******************************/
+
 .contact {
     padding: 60px 0;
     background: #ffffff !important;
@@ -1383,7 +1410,7 @@ a:focus {
 
 .contact-item i {
     font-size: 24px;
-    color: #00adb5;
+    color: #000000;
     margin-bottom: 15px;
 }
 
@@ -1408,11 +1435,8 @@ a:focus {
     .contact-info {
         gap: 20px;
     }
-    
     .contact-item {
         width: 100%;
         max-width: 300px;
     }
 }
-
-
