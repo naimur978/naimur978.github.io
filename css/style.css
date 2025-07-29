@@ -147,7 +147,7 @@ a:focus {
     top: 0;
     background: #ffffff !important;
     transition: .5s;
-    z-index: 999;
+    background: #007bff; /* Changed to a blue color, update as needed */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0;
 }
@@ -628,6 +628,8 @@ a:focus {
 
 .about .about-text p {
     font-size: 16px;
+        text-align: justify;
+
 }
 .about-text-desc {
     display: flex;
@@ -707,7 +709,7 @@ a:focus {
     padding: 20px;
 
     
-    border-radius: 20px;
+        text-align: justify; /* Added for better readability */
 
     background: #fff;
     box-shadow: 0 3px 10px var(--secondary-color-light);
@@ -1316,8 +1318,8 @@ a:focus {
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 500;
-    color: #000000;
-    background: #ffffff;
+    color: #ffffff;
+    background: #000000;
     border: 1px solid #000000;
     border-radius: 4px;
     transition: all 0.3s ease;
